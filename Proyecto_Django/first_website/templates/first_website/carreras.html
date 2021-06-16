@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fórmula 1</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'first_website/style.css' %}">
+</head>
+<body>
+  <h1>Temporada 2021</h1>
+  <h2>Carrera N°{{Carrera.id}}</h2>
+  <h3>-{{Carrera.pais}}</h3>
+  <p>{{Carrera.circuito}}</p>
+  <a href="/">Regresar</a>
+</body>
+</html>

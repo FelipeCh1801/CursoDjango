@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fórmula 1</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'first_website/style.css' %}">
+</head>
+<body>
+    <h1>Fórmula 1</h1>
+    <h2>Temporada 2021</h2>
+    <h3>Carreras</h3>
+    {% for carrera in Carreras %}
+    <h4>-{{carrera.pais}}</h4>
+    <a href="first_website/{{carrera.id}}">Ver Más</a>
+    {% endfor %}
+</body>
+</html>
